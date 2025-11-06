@@ -1,4 +1,5 @@
 #include "product.h"
+#include "snack.h"
 #include <iostream>
 
 
@@ -18,5 +19,9 @@ int main()
 
     // myProduct.price;
     // myDrink.getDescription();
+    
+    snack mySnack(snack::CHIPS, 45, "Spicy Chips", 2.48, 5, true);
+    std::cout << mySnack.tostring() << std::endl;
+
     return 0;
 }
