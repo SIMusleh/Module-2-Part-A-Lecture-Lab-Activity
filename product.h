@@ -17,7 +17,7 @@ public:
     void setPrice(double p);
     void setDescription(std::string desc);
     void setQuantity(int q);
-    std::string tostring() const;
+    virtual std::string tostring() const;
 
 protected:
     double price;

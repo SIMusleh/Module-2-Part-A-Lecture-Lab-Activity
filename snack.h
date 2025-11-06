@@ -15,4 +15,14 @@ class snack : public product
 
     public:
         snack(snackType type, int pn, std::string desc, double p, int q, bool isGlutenFree);
-}
+        
+        std::string getSnackType() const; 
+        bool getGlutenFree() const;
+
+        void setSnackType (snackType t);
+        void setGlutenFree(bool gf);
+
+        std::string tostring() const override;
+};
+
+#endif
